@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import useAuth from "../../hooks/useAuth";
 import SocialLogin from "../../shared/SocialLogin/SocialLogin";
 const SignUp = () => {
-    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const { createUser, userUpdateProfile } = useAuth();
     const navigate = useNavigate()
 
